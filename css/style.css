@@ -62,3 +62,16 @@ img {
    box-shadow: 2px 2px 5px green; 
 }
 
+.wiki-link {
+    color: white;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.wiki-text {
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+.wiki-link:hover {
+    background-color: black;
+}
