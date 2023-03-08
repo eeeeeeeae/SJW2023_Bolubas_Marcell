@@ -40,7 +40,7 @@
         <div class="d-inline-block bg-light p-2 pb-0" style="--bs-bg-opacity: .7;width:90%;">
             <h1 class="text-center text-success">Pizzarendelés</h1>
 
-            <div class="container-fluid d-flex justify-content-center">
+            <div class="container-fluid d-flex justify-content-center p-4">
 
                 <form class="w-50">
                     <label for="type">Pizzatípus:</label>
@@ -55,24 +55,38 @@
                     <label for="count">Darabszám:</label>
                     <input type="number" name="count" id="count" min="0" class="form-control" required>
 
-                    <label for="extrak"></label>
+                    <label for="extrak">Extrák:</label>
                     <div id="extrak">
-                        <input type="checkbox" name="cheese" id="cheese">
-                        <label for="cheese">Sajt</label>
+                        <input type="checkbox" name="cheese" id="cheese" class="form-check-input" value="sajt-200">
+                        <label for="cheese" class="form-check-label">Sajt</label>
 
-                        <input type="checkbox" name="ham" id="ham">
-                        <label for="ham">Sonka</label>
+                        <br>
 
-                        <input type="checkbox" name="corn" id="corn">
-                        <label for="corn">Kukorica</label>
+                        <input type="checkbox" name="ham" id="ham" class="form-check-input" value="sonka-250">
+                        <label for="ham" class="form-check-label">Sonka</label>
 
-                        <input type="checkbox" name="mushroom" id="mushroom">
-                        <label for="mushroom">Gomba</label>
+                        <br>
 
-                        <input type="checkbox" name="chili" id="chili">
-                        <label for="chili">Chili paprika</label>
+                        <input type="checkbox" name="corn" id="corn" class="form-check-input" value="kukorica-150">
+                        <label for="corn" class="form-check-label">Kukorica</label>
+
+                        <br>
+                        
+                        <input type="checkbox" name="mushroom" id="mushroom" class="form-check-input" value="gomba-200">
+                        <label for="mushroom" class="form-check-label">Gomba</label>
+
+                        <br>
+                        
+                        <input type="checkbox" name="chili" id="chili" class="form-check-input" value="chili paprika-230">
+                        <label for="chili" class="form-check-label">Chili paprika</label>
+
+                        <button type="submit" class="btn btn-success w-100">Megrendelem</button>
                     </div>
                 </form>
+
+                <div class="alert alert-success d-none" role="alert">
+                    A simple success alert—check it out!
+                  </div>
             </div>
         </div>
     </div>
