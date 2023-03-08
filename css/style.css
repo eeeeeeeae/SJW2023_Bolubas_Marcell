@@ -1,0 +1,11 @@
+body {
+    background: url("../img/bg_pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.navbar {
+    background-color: maroon;
+}
