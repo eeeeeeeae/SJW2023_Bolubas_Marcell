@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
     font-size: 7em;
+    font-variant: small-caps;
 }
 
 h2 {
@@ -53,6 +54,11 @@ ul.pizza > li {
 
 .modern-pizza {
     width: 60% !important;
-    border: 5px double green;
-    
+    border: 5px double green;  
+    background-color:lightyellow; 
 }
+
+img {
+   box-shadow: 2px 2px 5px green; 
+}
+
