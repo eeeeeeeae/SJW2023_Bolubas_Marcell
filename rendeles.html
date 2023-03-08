@@ -10,6 +10,73 @@
 </head>
 <body>
     
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Pizza</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#tortenete">Története</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#napolyi">Nápolyi pizza</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="rendeles.html">Rendelés</a>
+              </li>
+              
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid d-flex justify-content-center" id="content">
+        <div class="d-inline-block bg-light p-2 pb-0" style="--bs-bg-opacity: .7;width:90%;">
+            <h1 class="text-center text-success">Pizzarendelés</h1>
+
+            <div class="container-fluid d-flex justify-content-center">
+
+                <form class="w-50">
+                    <label for="type">Pizzatípus:</label>
+                    <select name="type" id="type" class="form-control" required>
+                        <option selected>Válasszon egyet!</option>
+                        <option value="3200">Nápolyi pizza</option>
+                        <option value="3000">Bolognai pizza</option>
+                        <option value="2800">Songoku pizza</option>
+                        <option value="2700">Hawaii pizza</option>
+                    </select>
+                
+                    <label for="count">Darabszám:</label>
+                    <input type="number" name="count" id="count" min="0" class="form-control" required>
+
+                    <label for="extrak"></label>
+                    <div id="extrak">
+                        <input type="checkbox" name="cheese" id="cheese">
+                        <label for="cheese">Sajt</label>
+
+                        <input type="checkbox" name="ham" id="ham">
+                        <label for="ham">Sonka</label>
+
+                        <input type="checkbox" name="corn" id="corn">
+                        <label for="corn">Kukorica</label>
+
+                        <input type="checkbox" name="mushroom" id="mushroom">
+                        <label for="mushroom">Gomba</label>
+
+                        <input type="checkbox" name="chili" id="chili">
+                        <label for="chili">Chili paprika</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" defer></script>
 </body>
